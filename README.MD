@@ -60,9 +60,6 @@ size_t preserveSize = 7;  // Specify how many bytes to preserve (e.g., 7 in this
 
 Detour detour(targetAddress, detourFunction, preserveSize);
 
-// Make the detour and inject custom bytes
-detour.make();
-
 // Install the hook (replace original instruction with a jump)
 detour.install();
 
